@@ -1,0 +1,169 @@
+/* Home.css */
+
+.RectangleBoxContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align boxes to the left */
+  margin-top: 100px;
+  margin-right: 220px; /* Adjust margin to create space for the vertical rectangle */
+}
+
+.RectangleBox {
+  position: relative;
+  border: 1px solid #000000; /* Black border */
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  max-width: calc(100% - 4in);
+  width: 100%;
+  box-sizing: border-box;
+  transition: transform 0.2s ease;
+}
+
+.RectangleBox:hover {
+  transform: translateY(-5px);
+}
+
+.VerticalRectangleContainer {
+  position: fixed;
+  top: 200px; /* Adjust top position as needed */
+  right: 20px; /* Adjust right position as needed */
+  width: 300px; /* Increase width */
+  height: calc(100% - 250px); /* Maintain the same height */
+  background-color: #192078; /* Orange color */
+  margin-left: auto; /* Align with right edge of RectangleBoxes */
+  margin-right: 0; /* Align with right edge of RectangleBoxes */
+  z-index: 999; /* Ensure it's above other elements */
+  padding: 20px; /* Add padding for spacing */
+  border-radius: 8px; /* Add border radius */
+  border: 2px solid #ffffff; /* White border */
+}
+
+.Title {
+  text-align: center;
+  color: #ffffff; /* White text color */
+  padding: 10px; /* Add padding to title */
+}
+
+
+.text {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff; /* White text color */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  margin-right: 20px;
+}
+
+.HomePage {
+  position: relative;
+  padding-top: 80px;
+}
+
+h1 {
+  display: inline-block;
+}
+/* Home.css */
+
+.SearchBarContainer {
+  position: fixed;
+  top: 90px;
+  left: 20px; /* Adjust the left position to move it more to the left */
+  z-index: 999;
+  animation: slideIn 1s forwards;
+}
+
+.SearchBar {
+  width: 400px;
+  padding: 15px 20px;
+  border: 1px solid #000000;
+  border-radius: 30px;
+  font-size: 18px;
+  background-color: #192078; /* Orange color */
+  color: #ffffff; /* White text color */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.SearchIcon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  transition: color 0.3s ease;
+}
+
+/* Home.css */
+
+.DateRangeContainer {
+  position: fixed;
+  top: 120px; /* Adjust the top position to move it somewhat upward */
+  right: 20px;
+  z-index: 999;
+  animation: slideIn 1s forwards;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #192078; /* Orange color */
+  border: 2px solid #ffffff; /* White border */
+}
+
+.DateRangeContainer label {
+  margin-right: 10px;
+}
+
+.DateRangeContainer input {
+  margin-right: 10px;
+}
+
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+
+
+.InstructionListTitle {
+  font-family: 'Arial', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.InstructionListTitle:hover {
+  cursor: default;
+   /* Disable pointer cursor on hover */
+}
+
+.InstructionList li {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #ffffff; /* White text color */
+  margin-bottom: 10px;
+  transition: font-size 0.3s ease; /* Add transition for font size only */
+}
+
+.InstructionList li:hover {
+  font-size: 18px; /* Increase font size on hover */
+}
+/* Home.css */
+
+.HomePage {
+  position: relative;
+  padding-top: 80px;
+  background-attachment: fixed; /* Ensure the background is fixed */
+}

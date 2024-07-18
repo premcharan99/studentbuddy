@@ -1,0 +1,75 @@
+.Navbar {
+  position: fixed; /* Keep the navbar fixed */
+  top: 0;
+  left: 0;
+  width: 98%;
+  height: 75px; /* Increase the height */
+  background-color: #150a8b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  z-index: 1000;
+  border-bottom: 15px solid #000000; /* Add a thin white border at the bottom */
+}
+
+.Navbar a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: #000000;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; /* Add transition for transform */
+  margin: 0 10px; /* Adjust margin between links */
+  border: none; /* Remove button border */
+}
+
+.Navbar a:hover {
+  color: #ff0000;
+  transform: translateY(-3px); /* Move the link upward by 3 pixels */
+}
+
+.LogoContainer {
+  margin-right: auto; /* Pushes the logo text to the left */
+}
+
+.LogoText {
+  font-size: 1.5rem; /* Adjust font size as needed */
+  font-weight: bold;
+  text-transform: uppercase; /* Optional: Convert text to uppercase */
+  letter-spacing: 2px; /* Optional: Adjust letter spacing */
+  animation: colorChange 2s infinite; /* Add animation to logo text */
+}
+
+@keyframes colorChange {
+  0% {
+    color: #03ff35; /* Start color */
+  }
+  25% {
+    color: #000000; /* Intermediate color 1 */
+  }
+  50% {
+    color: #ff02c0; /* Intermediate color 2 */
+  }
+  75% {
+    color: #ff0000; /* Intermediate color 3 */
+  }
+  100% {
+    color: #862acd; /* End color */
+  }
+}
+
+@media (max-height: 600px) {
+  .Navbar {
+    padding: 0 10px; /* Reduce padding when page height is small */
+  }
+
+  .Navbar a {
+    padding: 8px 16px; /* Reduce padding for links */
+    font-size: 14px; /* Reduce font size for links */
+  }
+
+  .LogoText {
+    font-size: 1.2rem; /* Reduce font size for logo text */
+  }
+}
